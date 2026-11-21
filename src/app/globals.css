@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+:root {
+  --bg: #f6f5f1;
+  --panel: #ffffff;
+  --sidebar: #eeece6;
+  --ink: #16181d;
+  --muted: #5b6170;
+  --line: #e1ded6;
+  --accent: #3b47c4;
+  --accent-soft: #e6e8fb;
+  --accent-ink: #ffffff;
+}
+
+[data-theme="dark"] {
+  --bg: #0f1116;
+  --panel: #171a21;
+  --sidebar: #13151b;
+  --ink: #eceef3;
+  --muted: #9aa1b2;
+  --line: #262a34;
+  --accent: #8b95ff;
+  --accent-soft: #1f2340;
+  --accent-ink: #0f1116;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-panel: var(--panel);
+  --color-sidebar: var(--sidebar);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-ink: var(--accent-ink);
+  --font-sans: var(--font-jakarta);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-jakarta), system-ui, sans-serif;
+}
+
+section {
+  scroll-margin-top: 5rem;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+.caret {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.rise {
+  animation: rise 0.6s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .caret,
+  .rise {
+    animation: none;
+  }
+}
