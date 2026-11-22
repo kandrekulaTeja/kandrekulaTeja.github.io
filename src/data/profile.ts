@@ -10,7 +10,7 @@ export const profile = {
   typingSuffix: "magic!",
   location: "Pune, India",
   // Put a photo at public/photo.jpg and set this to "/photo.jpg"
-  photo: null as string | null,
+  photo: "/photo.jpg" as string | null,
   // Put your CV at public/cv.pdf and set this to "/cv.pdf"
   cv: null as string | null,
   openToWork: false,
