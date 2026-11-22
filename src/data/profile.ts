@@ -5,31 +5,21 @@ export const profile = {
   shortName: "Sai Teja",
   initials: "SK",
   title: ["Pharma Forecasting", "Commercial Analytics", "NIPER Mohali"],
-  typingPrefix: "I'm all about that",
-typingPrefix: "I turn data into",
-
-typingWords: [
-  "Forecasting",
-  "Market Insights",
-  "Business Decisions",
-  "Revenue Projections",
-  "Strategic Insights",
-  "Predictive Models",
-  "Scenario Analysis",
-  "Monte Carlo Simulations"
-],
+  // Reads as: "I turn data into" / [typed word] magic!
+  // Keep typing words short (about 12 letters max) so they fit on phones.
+  typingPrefix: "I turn data into",
+  typingWords: ["Forecasting", "Monte Carlo", "Insight", "Strategy", "Scenario"],
   typingSuffix: "magic!",
   location: "Hyderabad, India",
-  // Put a photo at public/photo.jpg and set this to "/photo.jpg"
+  // Photo file inside the public folder
   photo: "/photo.png.png" as string | null,
   // Put your CV at public/cv.pdf and set this to "/cv.pdf"
   cv: null as string | null,
   openToWork: false,
-intro: [
-  "Pharmaceutical forecasting professional with ~3.5 years of experience in commercial forecasting and analytics, currently working at EY on global RSV vaccine forecasting for Merck. I support Long-Range Operational Planning (LROP), forecast extensions, regional roll-ups, and Business Planning Cycle (BPC) alignment, translating market-level assumptions into global demand and revenue projections.",
-  
-  "My work involves evaluating epidemiological trends, eligible populations, vaccination coverage, market share, and pricing assumptions to develop and refine forecasting scenarios. I also work on Monte Carlo simulations, forecast consolidation, and process automation using Excel VBA, with a focus on improving analytical efficiency and delivering clear, actionable insights to support business planning and strategic decisions."
-],
+  intro: [
+    "Pharmaceutical forecasting professional with ~3.5 years of experience in commercial forecasting and analytics, currently working at EY on global RSV vaccine forecasting for Merck. I support Long-Range Operational Planning (LROP), forecast extensions, regional roll-ups, and Business Planning Cycle (BPC) alignment, translating market-level assumptions into global demand and revenue projections.",
+    "My work involves evaluating epidemiological trends, eligible populations, vaccination coverage, market share, and pricing assumptions to develop and refine forecasting scenarios. I also work on Monte Carlo simulations, forecast consolidation, and process automation using Excel VBA, with a focus on improving analytical efficiency and delivering clear, actionable insights to support business planning and strategic decisions.",
+  ],
   links: {
     linkedin: "https://www.linkedin.com/in/sai-teja-kandrekula/",
     github: "https://github.com/kandrekulaTeja",
@@ -39,11 +29,11 @@ intro: [
 
 export const about = {
   paragraphs: [
-  "My journey began with a Bachelor’s in Pharmacy, followed by a master's in Pharmacology and Toxicology at NIPER Mohali, where I developed a strong foundation in experimental research and scientific analysis. Over time, I discovered my interest in pharmaceutical forecasting, where I could combine scientific understanding, data analytics, and business strategy.",
-  "Currently at EY, I work on global pharmaceutical forecasting, translating market dynamics and assumptions into demand and revenue projections that support strategic and financial planning. I enjoy building and refining forecasting models, automating workflows using Excel VBA, performing scenario and sensitivity analyses, and turning complex data into meaningful insights for stakeholders."
-]
+    "My journey began with a Bachelor's in Pharmacy, followed by a master's in Pharmacology and Toxicology at NIPER Mohali, where I developed a strong foundation in experimental research and scientific analysis. Over time, I discovered my interest in pharmaceutical forecasting, where I could combine scientific understanding, data analytics, and business strategy.",
+    "Currently at EY, I work on global pharmaceutical forecasting, translating market dynamics and assumptions into demand and revenue projections that support strategic and financial planning. I enjoy building and refining forecasting models, automating workflows using Excel VBA, performing scenario and sensitivity analyses, and turning complex data into meaningful insights for stakeholders.",
+  ],
   facts: [
-    { label: "Based in", value: "Pune, India" },
+    { label: "Based in", value: "Hyderabad, India" },
     { label: "From", value: "Bhimavaram, Andhra Pradesh" },
     { label: "Focus", value: "Oncology & vaccine forecasting" },
     { label: "Languages", value: "English, Telugu" },
@@ -56,30 +46,23 @@ export const experience = [
     org: "EY (Ernst & Young)",
     period: "Present",
     points: [
-  "Supported global RSV vaccine forecasting for Merck, contributing to Long-Range Operational Planning (LROP), forecast extensions, and Business Planning Cycle (BPC) submissions.",
-  
-  "Performed regional roll-ups, global forecast consolidation, and variance analysis across forecast cycles to identify key drivers of changes in doses and revenue.",
-  
-  "Developed Monte Carlo simulations across 12 tender markets using triangular distributions and 1,000+ iterations to quantify market share uncertainty and generate P10, P50, and P90 ranges for doses and revenue.",
-  
-  "Conducted scenario and sensitivity analyses to assess the impact of changes in market share, vaccination coverage, eligible populations, and other key assumptions on demand and revenue forecasts.",
-  
-  "Built waterfall charts and analytical visualizations to decompose forecast movements, explain key volume and revenue drivers, and communicate variances between planning cycles to stakeholders."
-],
+      "Supported global RSV vaccine forecasting for Merck, contributing to Long-Range Operational Planning (LROP), forecast extensions, and Business Planning Cycle (BPC) submissions.",
+      "Performed regional roll-ups, global forecast consolidation, and variance analysis across forecast cycles to identify key drivers of changes in doses and revenue.",
+      "Developed Monte Carlo simulations across 12 tender markets using triangular distributions and 1,000+ iterations to quantify market share uncertainty and generate P10, P50, and P90 ranges for doses and revenue.",
+      "Conducted scenario and sensitivity analyses to assess the impact of changes in market share, vaccination coverage, eligible populations, and other key assumptions on demand and revenue forecasts.",
+      "Built waterfall charts and analytical visualizations to decompose forecast movements, explain key volume and revenue drivers, and communicate variances between planning cycles to stakeholders.",
+    ],
   },
   {
     role: "Analyst",
     org: "Chryselys",
-    period: "Oct 2024 – April-2026",
-  points: [
-  "Supported patient-based and trend-based forecasting models across EMEA markets, with a focus on oncology and glaucoma portfolios, assessing patient populations, treatment dynamics, market potential, and brand performance.",
-    
-  "Performed scenario and sensitivity analyses, Monte Carlo simulations, and analog-based assessments to evaluate forecast assumptions, quantify uncertainty, and understand key business drivers.",
-  
-  "Contributed to the development and ongoing enhancement of a cloud-based forecasting platform, supporting model implementation, forecast workflows, and analytical capabilities.",
-  
-  "Developed Bass Diffusion adoption models using Excel VBA to project product uptake, visualize market penetration, and assess brand adoption trajectories."
-],
+    period: "Oct 2024 – Apr 2026",
+    points: [
+      "Supported patient-based and trend-based forecasting models across EMEA markets, with a focus on oncology and glaucoma portfolios, assessing patient populations, treatment dynamics, market potential, and brand performance.",
+      "Performed scenario and sensitivity analyses, Monte Carlo simulations, and analog-based assessments to evaluate forecast assumptions, quantify uncertainty, and understand key business drivers.",
+      "Contributed to the development and ongoing enhancement of a cloud-based forecasting platform, supporting model implementation, forecast workflows, and analytical capabilities.",
+      "Developed Bass Diffusion adoption models using Excel VBA to project product uptake, visualize market penetration, and assess brand adoption trajectories.",
+    ],
   },
   {
     role: "Analyst",
@@ -101,22 +84,12 @@ export const experience = [
   },
 ];
 
-
 export const highlights = [
-  {
-    value: "12",
-    label: "Tender markets analysed using Monte Carlo simulations"
-  },
-  {
-    value: "G7 + EMEA",
-    label: "Global forecasting experience across oncology and vaccine markets"
-  },
-  {
-    value: "AIR 60",
-    label: "NIPER JEE | GPAT Qualified"
-  },
+  { value: "~3.5 yrs", label: "Pharmaceutical forecasting & analytics experience" },
+  { value: "12", label: "Tender markets analysed using Monte Carlo simulations" },
+  { value: "G7 + EMEA", label: "Global forecasting across oncology and vaccine markets" },
+  { value: "AIR 60", label: "NIPER JEE | GPAT Qualified" },
 ];
-
 
 export const skills = [
   {
