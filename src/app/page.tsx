@@ -70,7 +70,11 @@ export default function Page() {
                   {profile.title.join("  |  ")}
                 </p>
                 <p className="mt-6 text-3xl font-bold leading-tight sm:text-4xl">
-                  {profile.typingPrefix} <Typewriter words={profile.typingWords} /> {profile.typingSuffix}
+                  <Typewriter
+                    prefix={profile.typingPrefix}
+                    words={profile.typingWords}
+                    suffix={profile.typingSuffix}
+                  />
                 </p>
                 <div className="mt-6 max-w-2xl space-y-4 text-[17px] leading-relaxed text-muted">
                   {profile.intro.map((p) => (
